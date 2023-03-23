@@ -8,7 +8,6 @@ module Inc16(
 	input [15:0] in,
 	output [15:0] out
 );
-
-	// Put your code here:
-
+	Add16 add0(.a(in), .b(1), .out(out));
+	
 endmodule

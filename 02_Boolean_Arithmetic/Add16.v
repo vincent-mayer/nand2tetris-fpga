@@ -28,7 +28,7 @@ module Add16(
 	wire c14;
 	wire c15;
 
-	FullAdder adder0(.a(a[0]), .b(b[0]), .c(0), .sum(out[0]), .carry(c0));
+	FullAdder adder0(.a(a[0]), .b(b[0]), .c(1'b0), .sum(out[0]), .carry(c0));
 	FullAdder adder1(.a(a[1]), .b(b[1]), .c(c0), .sum(out[1]), .carry(c1));
 	FullAdder adder2(.a(a[2]), .b(b[2]), .c(c1), .sum(out[2]), .carry(c2));
 	FullAdder adder3(.a(a[3]), .b(b[3]), .c(c2), .sum(out[3]), .carry(c3));

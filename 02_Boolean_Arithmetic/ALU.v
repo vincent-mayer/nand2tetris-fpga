@@ -53,12 +53,12 @@ module ALU(
     wire [7:0] lsb;
 
 
-    Mux16 mux0(.a(x), .b(0), .sel(zx), .out(xzero));
+    Mux16 mux0(.a(x), .b(16'b0), .sel(zx), .out(xzero));
     Not16 not0(.in(xzero), .out(notxzero));
     Mux16 mux1(.a(xzero), .b(notxzero), .sel(nx), .out(xnegzero));
 
     // zy, ny
-    Mux16 mux2(.a(y), .b(0), .sel(zy), .out(yzero));
+    Mux16 mux2(.a(y), .b(16'b0), .sel(zy), .out(yzero));
     Not16 not1(.in(yzero), .out(notyzero));
     Mux16 mux3(.a(yzero), .b(notyzero), .sel(ny), .out(ynegzero));
 

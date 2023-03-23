@@ -1,10 +1,12 @@
 # nand2tetris-FPGA (v2.0)
 
-> ... _Would'nt it be nice to make Hack or Jack also run on some "real platform," made from some "real stuff"?_ ... 
-> 
-> ---Noam Nisan and Shimon Schocken
+> **_NOTE:_** This is a fork of Michael Schröder's [Gitlab repo](https://gitlab.com/x653/nand2tetris-fpga) with my implementation. For the original source please refer to the Gitlab repository.
 
 This project is about building HACK on real hardware as proposed in Chapter 13 of the course [nand2tetris](https://www.nand2tetris.org/) using only FOSS, free and open source hard- and software.
+
+> ... _Would'nt it be nice to make Hack or Jack also run on some "real platform," made from some "real stuff"?_ ...
+>
+> ---Noam Nisan and Shimon Schocken
 
  ![](doc/inside.jpg)
 
@@ -14,7 +16,7 @@ Our final implementation of HACK will have the following specs:
 
 * implemented on iCE40HX1K-EVB from Olimex
 
-* clocked at 25 MHz 
+* clocked at 25 MHz
 
 * RAM 3840 x 16 bit (R0-R15/static/stack/heap)
 
@@ -37,7 +39,7 @@ Our final implementation of HACK will have the following specs:
 In every project folder you find a file `Readme.md` containing specifications and implementation details.
 
 > _... This is your last chance. After this, there is no turning back. You take the blue pill — the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill — you stay in Wonderland and I show you how deep the rabbit-hole goes. ..._
-> 
+>
 > ---Morpheus
 
 ### [00 Requirement](00_Requirement)
@@ -103,5 +105,5 @@ We provide construction files to print a little case for your HACK computer with
 
 ---
 
-For questions or comments write an email to 
+For questions or comments write an email to
 mi.schroeder@netcologne.de

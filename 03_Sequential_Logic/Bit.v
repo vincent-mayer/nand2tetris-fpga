@@ -11,7 +11,11 @@ module Bit(
 	input load,
 	output out
 );
+	wire muxout;
+	wire prevout;
 
-	// Put your code here:
+	Mux mux0(.a(prevout), .b(in), .sel(load), .out(muxout));
+	DFF dff(.clk(clk), .in(muxout), .out(out));
+	Buffer buf0(.in(out), .out(prevout));
 
 endmodule

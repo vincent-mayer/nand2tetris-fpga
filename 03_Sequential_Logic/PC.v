@@ -15,7 +15,17 @@ module PC(
 	input reset,
 	output [15:0] out
 );	
-	
-	// Put your code here:
+	wire [15:0] oo;
+	wire [15:0] incd;
+	wire [15:0] o;
+	wire [15:0] uu;
+	wire [15:0] this;
+
+	Inc16 inc0(.in(oo),.out(incd));
+	Mux16 mux0(.a(oo),.b(incd),.sel(inc),.out(o));
+	Mux16 mux1(.a(o),.b(in),.sel(load),.out(uu));
+	Mux16 mux2(.a(uu),.b(16'b0),.sel(reset),.out(this));
+	Register reg0(.clk(clk),.in(this),.load(1'b1),.out(out));
+	Buffer16 buf0(.in(out), .out(oo));
 
 endmodule

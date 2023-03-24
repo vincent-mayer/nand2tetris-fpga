@@ -1,5 +1,7 @@
-// led.asm
-// execute an infinite loop to
-// read the button state and output to led
-
-// Put your code here:
+(LOOP)
+@4097
+D=M
+@4096
+M=D
+@LOOP
+0;JMP

@@ -29,9 +29,30 @@ M=D
 M=1
 
 // Put your code here:
+@R1
+D=M
+@times
+M=D
+@R2
+M=0
+(LOOP)
+@times
+D=M
+@END
+D; JEQ
+@R1
+D=D-A
+@times
+M=D
+@R2
+D=M
+@R0
+D=D+M // d = R0 + SUM
+@R2
+M=D //and, now sum = sum+R0
 
-
-
+@LOOP
+0;JMP
 
 
 // till here!

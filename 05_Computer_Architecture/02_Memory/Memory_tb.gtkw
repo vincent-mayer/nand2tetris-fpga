@@ -14,6 +14,8 @@
 [signals_width] 160
 [sst_expanded] 1
 [sst_vpaned_height] 258
+@28
+Memory_tb.clk
 @200
 -IN
 @22
@@ -41,24 +43,42 @@ Memory_tb.load
 -OUT
 @22
 Memory_tb.out[15:0]
+Memory_tb.out_cmp[15:0]
 @28
 Memory_tb.loadRAM
+Memory_tb.loadRAM_cmp
 Memory_tb.loadIO0
+Memory_tb.loadIO0_cmp
 Memory_tb.loadIO1
+Memory_tb.loadIO1_cmp
 Memory_tb.loadIO2
+Memory_tb.loadIO2_cmp
 Memory_tb.loadIO3
+Memory_tb.loadIO3_cmp
 Memory_tb.loadIO4
+Memory_tb.loadIO4_cmp
 Memory_tb.loadIO5
+Memory_tb.loadIO5_cmp
 Memory_tb.loadIO6
+Memory_tb.loadIO6_cmp
 Memory_tb.loadIO7
+Memory_tb.loadIO7_cmp
 Memory_tb.loadIO8
+Memory_tb.loadIO8_cmp
 Memory_tb.loadIO9
+Memory_tb.loadIO9_cmp
 Memory_tb.loadIOA
+Memory_tb.loadIOA_cmp
 Memory_tb.loadIOB
+Memory_tb.loadIOB_cmp
 Memory_tb.loadIOC
+Memory_tb.loadIOC_cmp
 Memory_tb.loadIOD
+Memory_tb.loadIOD_cmp
 Memory_tb.loadIOE
+Memory_tb.loadIOE_cmp
 Memory_tb.loadIOF
+Memory_tb.loadIOF_cmp
 @200
 -Test
 @29
